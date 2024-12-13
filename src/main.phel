@@ -1,0 +1,12 @@
+(ns phel-time\main
+  (:require phel-time\core :refer [time]))
+
+(println "compile")
+(php/flush)
+(println (compile '(time (do (php/sleep 1) :well-sleep))))
+(php/flush)
+(println "time")
+(php/flush)
+(println (time (do (php/sleep 1) :well-sleep)))
+(php/flush)
+(println "done")

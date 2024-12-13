@@ -1,0 +1,30 @@
+{
+    "name": "smeghead/phel-time",
+    "description": "phel time",
+    "type": "library",
+    "keywords": [
+        "phel",
+        "time"
+    ],
+    "require": {
+        "php": ">=8.2",
+        "phel-lang/phel-lang": "^0.16"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phel\\PhelSchema\\": "src/php/"
+        }
+    },
+    "authors": [
+        {
+            "name": "smeghead",
+            "email": "smeghead7@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": [
+            "vendor/bin/phel test"
+        ]
+    }
+}
